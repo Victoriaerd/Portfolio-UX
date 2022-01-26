@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*
+====================================ABOUT PAGE CSS=========================================*/
+.grid-container-about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+body {
+  line-height: calc(1em + 0.5rem);
+}
+h2.about-me {
+  padding: 4%;
+  padding-bottom: 0;
+}
+section p {
+  margin: 4%;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+/*====================================== Tablet & Mobile view: ===================================*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /*========================================== Mobile view: ======================================*/
+@media only screen and (max-width: 568px) {
+  .grid-container-about {
+    grid-template-columns:100%;
+  }
+}

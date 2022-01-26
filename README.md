@@ -1,2 +1,3 @@
-# Portfolio-UX
-UX Portfolio
+# Victoria Erdelevskaya portfolio
+
+UX Design portfolio

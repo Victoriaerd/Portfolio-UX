@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+:root {
+  --dark-grey: #797979;
+  --light-grey: #f3f3f3;
+  --fontcolor: #141414;
+  --fontcolorvisited: #3a0877;
+  --yellowcolor: #f8a644;
+  --mintcolor: #1593b9;
+}
+
+/*
+====================================ABOUT PAGE CSS=========================================*/
+.grid-container-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+h2.message {
+  padding-top: 10rem;
+  text-align: center;
+  margin-left: 2%;
+}
+section p {
+  margin: 2%;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.grid-item-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem;
+  padding: 10px;
+}
+
+form {
+  padding: 2rem;
+}
+
+.section {
+  text-align: center;
+}
+
+.grid-item-2 {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+button.submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--fontcolor);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--light-grey);
+  box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.2888),
+    2px 2px 5px rgba(0, 0, 0, 0.2888);
+  margin-top: 215px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 3rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+input,
+textarea {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2888) inset,
+    -3px -3px 4px rgba(255, 255, 255, 0.2888) inset;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 2%;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*======================768: Smaller screens, laptops view=========================*/
+
+@media only screen and (max-width: 768px) {
+  .grid-container-contact {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .grid-item {
+    max-width: 100%;
+  }
+  h2.message {
+    padding-top: 2rem;
+  }
+}

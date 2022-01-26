@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*
+===================================HEAL'S 3D PAGE and Finance App Design CSS=======================================*/
+.grid-container-heals {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+body {
+  line-height: calc(1rem + 1rem);
+}
+
+main {
+  background-color: white;
+}
+
+section {
+  margin: 4%;
+  padding: 0;
+  margin-top: 0;
+}
+
+h1.projects {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--fontcolor);
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1%;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+h2.projects {
+  font-size: 4rem;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+h3.projects {
+  font-size: 1.2rem;
+  padding: 0;
+  padding-bottom: 1%;
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+h3.challenge {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 0;
+  padding-bottom: 1%;
+  margin-right: 0;
+  margin-left: 4%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  z-index: 1;
+}
+
+p.projects {
+  margin-left: 10%;
+}
+section p {
+  margin: 0;
+  margin-left: 4%;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.grid-item {
+  padding-right: 1.5rem;
+}
+
+/*====================================== Tablet & Mobile view: ===================================*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .grid-container-heals {
+    grid-template-columns: 100%;
+  }
+  .video {
+    grid-row-start: 5;
+  }
+
+  h1.projects {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  h2.projects {
+    font-size: 2.5rem;
+  }
+  h3.challenge {
+    font-size: 1.5rem;
+  }
+}
