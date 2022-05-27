@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 /*
-===================================HEAL'S 3D PAGE and Finance App Design CSS=======================================*/
+===================================HEAL'S 3D PAGE and Ebike App Design CSS=======================================*/
 .grid-container-heals {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
+.grid-container-p5 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
 body {
   line-height: calc(1rem + 1rem);
 }
@@ -51,7 +54,7 @@ h3.projects {
 }
 
 h3.challenge {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 2rem;
   padding: 0;
@@ -66,7 +69,8 @@ h3.challenge {
 p.projects {
   margin-left: 10%;
 }
-section p {
+section p,
+ol {
   margin: 0;
   margin-left: 4%;
   text-align: justify;
@@ -75,7 +79,23 @@ section p {
 .grid-item {
   padding-right: 1.5rem;
 }
+.p5 {
+  padding-right: 0;
+}
+.images {
+  margin-top: 6rem;
+}
 
+#sketch {
+  padding: 0;
+}
+a.images {
+  text-decoration: underline; /* to show that it's a link */
+}
+
+/* script {
+  padding-left: 10%;
+} */
 /*====================================== Tablet & Mobile view: ===================================*/
 
 @media only screen and (max-width: 768px) {
@@ -85,6 +105,10 @@ section p {
   .grid-container-heals {
     grid-template-columns: 100%;
   }
+  .grid-container-p5 {
+    grid-template-columns: 100%;
+  }
+
   .video {
     grid-row-start: 5;
   }

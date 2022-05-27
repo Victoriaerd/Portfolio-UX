@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>Victoria Erdelevskaya - UX &amp;Web Design Portfolio</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style-subpages.css" />
 
   <meta name="description" content="Portfolio" />
   <meta name="keywords" content="UX, Design, Portfolio" />
@@ -18,6 +19,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+  <script src="./nowar.js"></script>
 </head>
 
 <body>
@@ -36,7 +39,6 @@
           <i class="caret-down">
             <img src="./images/fluent_caret_down_icon.svg" alt="caret down" class="top-navigation" />
           </i>
-          <!-- Drop Down Menu in top nav .dropdown-content-->
           <div class="dropdown-content">
             <ul>
               <li>
@@ -63,56 +65,22 @@
   </header>
 
   <main>
-    <div class="hero-background">
-      <h1>
-        Hi! I am a Multidisciplinary <br />
-        UX Designer, Photographer &amp; <br />
-        Videographer based in London.
-      </h1>
-      <button class="contact" type="button" onclick="javascript:location.href='contact.html';" value="Contact">
-        Get in Touch
-      </button>
-    </div>
-    <!-- ARIA role projects  added to the next section of the page for accessibility.  -->
-    <section aria-label="projects">
-      <div class="grid-container">
-        <div class="grid-item">
-          <a href="heals-3D-visualitation.html">
-            <img src="./images/Valley sofa-231.jpg" alt="3D Rendering Project for Heal's" width="auto" height="auto" />
-            <div class="overlay">
-              <h3 class="text">
-                Heal's: <br />
-                3D Visualisation
-              </h3>
-            </div>
-          </a>
+    <section>
+      <h1 class="projects">P5.JS Sketch</h1>
+      <div class="grid-container-p5">
+        <div id="sketch-holder">
+          <!-- p5.js sketch -->
         </div>
-        <div class="grid-item">
-          <a href="e-bike-shop-design.html">
-            <img src="./images/E-bike-images/thumbnail-e-bike-shop.jpg" alt="E-bike shop case study" width="auto"
-              height="auto" />
-            <div class="overlay">
-              <h3 class="text">ENU E-bike website. <br />Case study</h3>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="p5.js-sketches.html">
-            <img src="./images/nowar.jpg" alt="p5.js sketcheso" width="1200" height="auto" />
-            <div class="overlay">
-              <h3 class="text">P5.JS Sketches</h3>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="photography-portfolio.html">
-            <img src="./images/GoodMorning-homepage.jpg" alt="Photography Portfolio" width="1200" height="auto" />
-            <div class="overlay">
-              <h3 class="text">Photography Portfolio</h3>
-            </div>
-          </a>
+        <div class="p5">
+          <p>
+            This sketch was created in support of Ukraine. <br />
+            My mom is Russian and my dad is a Ukranian. As a part of my creative codign course I wanted to create a
+            sketch
+            that would condem the violent act of Russian war against Ukranian people.
+          </p>
         </div>
       </div>
+
     </section>
   </main>
 
@@ -138,6 +106,7 @@
       <p>Your data isn't collected when using this site.</p>
     </small>
   </footer>
+
 </body>
 
 </html>

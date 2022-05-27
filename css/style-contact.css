@@ -55,11 +55,11 @@ button.submit {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--fontcolor);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--light-grey);
   box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.2888),
     2px 2px 5px rgba(0, 0, 0, 0.2888);
-  margin-top: 215px;
+  margin-top: 15rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -81,7 +81,7 @@ textarea {
   border: none;
   padding: 2%;
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*======================768: Smaller screens, laptops view=========================*/
