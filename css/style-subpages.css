@@ -25,7 +25,7 @@ section {
 }
 
 h1.projects {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   color: var(--fontcolor);
   padding: 0;
@@ -36,7 +36,7 @@ h1.projects {
 }
 
 h2.projects {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0;
   margin-right: 0;
   margin-left: 4%;
@@ -69,6 +69,7 @@ h3.challenge {
 p.projects {
   margin-left: 10%;
 }
+
 section p,
 ol {
   margin: 0;
@@ -76,6 +77,27 @@ ol {
   text-align: justify;
   font-size: 1.1rem;
 }
+
+ol li.interview {
+  font-size: 16px;
+  color: var(--fontcolor);
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased; /* switches off font smoothing - only relevant for Mac OS*/
+  max-width: 100%;
+  line-height: calc(
+    1em + 0.5rem
+  ); /* this calculation uses the font-size as a base, and adds a fixed amount of space to each line.
+  This declaration produces tighter lines for bigger text like headings. */
+  margin: 0; /* Removes all defaultt browser margins*/
+  background-color: white;
+  font-style: normal;
+  list-style-type: circle; 
+  margin-right: 30px;
+}
+blockquote {
+  font-style: italic; 
+}
+
 .grid-item {
   padding-right: 1.5rem;
 }

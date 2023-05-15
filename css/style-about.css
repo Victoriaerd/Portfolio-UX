@@ -6,6 +6,9 @@
   display: grid;
   grid-template-columns: 30% 70%;
 }
+.grid-item-2 {
+  max-width: 60%;
+}
 
 body {
   line-height: calc(1em + 0.5rem);
@@ -13,6 +16,7 @@ body {
 h2.about-me {
   padding: 4%;
   padding-bottom: 0;
+
 }
 section p {
   margin: 4%;
