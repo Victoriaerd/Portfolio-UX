@@ -33,6 +33,13 @@ section p {
   /*========================================== Mobile view: ======================================*/
 @media only screen and (max-width: 568px) {
   .grid-container-about {
-    grid-template-columns:100%;
-  }
+    display: block; /* Change to block layout */
+ }
+ .grid-item-1,
+ .grid-item-2 {
+   max-width: 100%; 
+ }
+ .grid-item-1 {
+   margin-bottom: 20px; /* Add spacing between sections */
+ }
 }
