@@ -352,6 +352,51 @@ a.logo {
     display: block;
   }
 
+  ul li {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+  }
+  /* Dropdown top menu styling, displays on hover over  */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  
+  .nav-menu-item:hover .dropdown-content {
+    display: block;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .caret-down {
+    display: inline-block;
+    width: 1.4rem;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: var(--fontcolor);
+    text-decoration: none;
+  }
+  
+  /* Links hover-over */
+  a:hover:not(.active) {
+    color: var(--fontcolor);
+  }
+
   h1 {
     text-align: center;
   }
