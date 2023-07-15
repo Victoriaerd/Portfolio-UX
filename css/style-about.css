@@ -38,6 +38,7 @@ section p {
  .grid-item-1,
  .grid-item-2 {
    max-width: 100%; 
+   padding-bottom: 10%;
  }
  .grid-item-1 {
    margin-bottom: 20px; /* Add spacing between sections */

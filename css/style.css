@@ -401,6 +401,9 @@ a.logo {
     width: 100%; 
   } */
 
+
+   /* UPDATED NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
   .dropdown-content {
     position: static; /* Remove absolute positioning */
     display: none; /* Hide by default */
