@@ -386,6 +386,44 @@ a.logo {
     width: 1.4rem;
   }
   
+
+
+  .top-navigation {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start; /* Align to top */
+  }
+/*
+  .nav-menu-item {
+    display: block; /* Make buttons full width
+    width: 100%; 
+  } */
+
+  .dropdown-content {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide by default */
+    width: 100%; /* Make full width of parent */
+  }
+
+  .dropdown-content ul {
+    flex-direction: column; /* Stack dropdown links */
+  }
+
+  .dropdown-content li {
+    padding: 10px 0; /* Add spacing between links */
+    border-top: 1px solid #eee; /* Divider lines */
+  }
+
+  .dropdown-content.show {
+    display: block; /* Show dropdown when this class is added */
+  }
+
+  .caret-down {
+    
+    right: 10px; top: 10px; /* Position icon */
+  }
+
+
+  
   /* unvisited link */
   a:link {
     color: var(--fontcolor);
