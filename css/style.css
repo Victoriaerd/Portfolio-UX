@@ -407,7 +407,7 @@ a.logo {
   .dropdown-content {
     position: static; /* Remove absolute positioning */
     display: none; /* Hide by default */
-    width: 100%; /* Make full width of parent */
+    width: 90%; /* Make full width of parent */
   }
 
   .dropdown-content ul {
@@ -453,7 +453,8 @@ a.logo {
 
   ul li {
     display: inline;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .nav-menu-item:hover .dropdown-content {
     min-width: 300px;
@@ -463,7 +464,7 @@ a.logo {
   }
 
   a.top-navigation {
-    font-size: 1.3rem;
-    line-height: 3rem;
+    font-size:  0.9rem;
+    line-height: 2rem;
   }
 }
