@@ -32,8 +32,8 @@
     <nav class="top-navigation" id="myTopnav">
       <ul>
         <li class="nav-menu-item">
-          <a href="#" class="top-navigation">Work</a>
-          <i class="caret-down">
+          <a href="#" class="top-navigation">Work </a>
+          <!-- <i class="caret-down">
             <img src="./images/fluent_caret_down_icon.svg" alt="caret down" class="top-navigation" />
           </i>
           <!-- Drop Down Menu in top nav .dropdown-content-->
@@ -70,7 +70,14 @@
 
   <main>
     <div class="hero-background">
-      <h1>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./images/GoodMorning-homepage2.jpg">
+        <source media="(min-width: 768px)" srcset="./images/GoodMorning-homepageTablet.jpg">
+        <img src="./images/GoodMorning-homepageMobile2.jpg" alt="homepage images orange slice dipped in glitter"
+          width="100%" height="auto" object-fit="cover" ;>
+      </picture>
+
+      <h1 class="hero-background">
         Hi! I am a multidisciplinary <br />
         UX Designer &amp; Digital <br />
         Storyteller based in London
@@ -78,6 +85,7 @@
       <button class="contact" type="button" onclick="javascript:location.href='contact.html';" value="Contact">
         Get in Touch
       </button>
+
     </div>
     <!-- ARIA role projects  added to the next section of the page for accessibility.  -->
     <section aria-label="projects">
@@ -87,8 +95,8 @@
             <img src="./images/Veganapp/HomePageVegan AI.jpg" alt="vegan AI case study" width="auto" height="auto" />
             <div class="overlay">
               <h3 class="text">
-                Vegan AI <br />
-                Case study
+                Vegan AI: <br />
+                App for Vegan Lifestyle
               </h3>
             </div>
           </a>
@@ -99,7 +107,7 @@
               height="auto" />
             <div class="overlay">
               <h3 class="text">
-                Heal's: <br />
+                Heal's: furniture site <br />
                 Product Page Redesign
               </h3>
             </div>
@@ -110,7 +118,7 @@
             <img src="./images/Valley sofa-231.jpg" alt="3D Rendering Project for Heal's" width="auto" height="auto" />
             <div class="overlay">
               <h3 class="text">
-                Heal's: <br />
+                Heal's: furniture site <br />
                 3D Visualisation
               </h3>
             </div>
@@ -121,7 +129,7 @@
             <img src="./images/E-bike-images/thumbnail-e-bike-shop.jpg" alt="E-bike shop case study" width="auto"
               height="auto" />
             <div class="overlay">
-              <h3 class="text">ENU E-bike website. <br />Case study</h3>
+              <h3 class="text">ENU E-bike: brand &amp <br />Mobile website</h3>
             </div>
           </a>
         </div>
@@ -137,7 +145,9 @@
           <a href="photography-portfolio.html">
             <img src="./images/GoodMorning-homepage.jpg" alt="Photography Portfolio" width="1200" height="auto" />
             <div class="overlay">
-              <h3 class="text">Photography and Videography</h3>
+              <h3 class="text">Photography and
+                <br> Videography
+              </h3>
             </div>
           </a>
         </div>
