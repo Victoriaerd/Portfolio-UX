@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /*
-===================================HEAL'S 3D PAGE and Ebike App Design CSS=======================================*/
+===================================Subpages Design CSS=======================================*/
 .grid-container-heals {
   display: grid;
-  grid-template-columns: 50% 50%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .grid-container-p5 {
   display: grid;
@@ -126,7 +127,8 @@ a.images {
     font-size: 14px;
   }
   .grid-container-heals {
-    grid-template-columns: 100%;
+    max-width: 90%;
+    margin: 0 auto; 
   }
   .grid-container-p5 {
     grid-template-columns: 100%;
@@ -137,12 +139,12 @@ a.images {
   }
 
   h1.projects {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
   h2.projects {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3.challenge {
     font-size: 1.5rem;
