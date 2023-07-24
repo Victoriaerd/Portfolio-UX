@@ -161,9 +161,7 @@ a.top-navigation:hover:before {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  
   width: 100%;
-  
   display: flex;
   flex-direction: column;
 }
@@ -351,6 +349,7 @@ a.logo {
     top: 6%;
     left: 30%;
   }
+
   button {
     border: none;
     outline: none;
