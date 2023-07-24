@@ -355,19 +355,19 @@ a.logo {
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--fontcolor);
     font-family: "oswald", sans-serif;
     width:8rem;
     height:3rem;
     border-radius: 24px;
-    box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.2888),
-      2px 2px 5px rgba(0, 0, 0, 0.2888);
+    border-radius: 24px;
+    outline: 1px solid rgb(15, 15, 15); 
     margin-top: 40px;
     position: absolute; /* .herobackground that contains button is set to relative and I used absolute position for the button to position it correctly especially on mobile and tablet  */
     top: 75%;
-    left: 42%;
+    left: 41%;
     transform: translateY(-50%);
   }
 
@@ -415,7 +415,7 @@ a.logo {
     width:8rem;
     height:2.5rem;
     top: 80%;
-    left: 41%;
+    left: 40%;
     transform: translateY(-50%);
   }
   a.top-navigation:before {
@@ -425,13 +425,28 @@ a.logo {
 
 /*===================================Mobile View===================================*/
 @media only screen and (max-width: 568px) {
+ 
   body {
     font-size: 14px;
   }
+
+  header {
+    background-color: white;
+    padding: 40px;
+    padding-left: 4rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+
   header img {
-   width: 100px;
-   position: relative;
-   left: 33%;
+   width: 80px;
+  }
+
+  a .top-navigation {
+    flex-direction: column;
+    
   }
 
   h1.hero-background {
@@ -458,8 +473,8 @@ a.logo {
     width:8rem;
     height:2rem;
     border-radius: 24px;
-    box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.2888),
-      2px 2px 5px rgba(0, 0, 0, 0.2888);
+    border-radius: 24px;
+    outline: 1px solid rgb(15, 15, 15);
     margin-top: 40px;
     position: absolute; /* .herobackground that contains button is set to relative and I used absolute position for the button to position it correctly especially on mobile and tablet  */
     top: 45%;
@@ -524,28 +539,45 @@ a.logo {
    /* UPDATED NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   .dropdown-content {
-    position: static; /* Remove absolute positioning */
+    position: absolute; /* Remove absolute positioning */
     display: none; /* Hide by default */
-    width: 90%; /* Make full width of parent */
+    width: 80%; /* Make full width of parent */
   }
 
   .dropdown-content ul {
-    flex-direction: column; /* Stack dropdown links */
+    flex-direction:column; /* Stack dropdown links */
   }
 
   .dropdown-content li {
-    padding: 10px 0; /* Add spacing between links */
-    border-top: 1px solid #eee; /* Divider lines */
+    padding: 5px 0; /* Add spacing between links */
+    /*border-top: 1px solid #eee; /* Divider lines */
   }
 
   .dropdown-content.show {
     display: block; /* Show dropdown when this class is added */
   }
 
-  .caret-down {
-    
-    right: 10px; top: 10px; /* Position icon */
-  }
+
+/* Dropdown top menu styling, displays on hover over  */
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  flex-direction: column;
+}
+
+.nav-menu-item:hover .dropdown-content {
+  display: block;
+  max-width: 200px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
 
   /* unvisited link */
   a:link {
@@ -553,6 +585,8 @@ a.logo {
     text-decoration: none;
   }
   
+
+
   /* Links hover-over */
   a:hover:not(.active) {
     color: var(--fontcolor);
