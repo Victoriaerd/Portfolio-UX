@@ -12,7 +12,6 @@
   grid-template-columns: 60% 40%;
 }
 body {
-  
   line-height: calc(1rem + 1rem);
 }
 
@@ -53,12 +52,13 @@ img {
 
 p.heading {
   font-size: 1rem;
+  line-height: 1.8rem;
   padding-left: 10%;
   margin-left: 10%;
 }
 
 h1.projects {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: var(--fontcolor);
   padding-top: 10%;
@@ -153,7 +153,7 @@ a.images {
 /* script {
   padding-left: 10%;
 } */
-/*====================================== Tablet & Mobile view: ===================================*/
+/*====================================== Tablet view: ===================================*/
 
 @media only screen and (max-width: 768px) {
   body {
@@ -175,17 +175,24 @@ a.images {
     grid-template-columns: 1fr;
   }
 
+   .grid-container-healsproduct {
+    grid-template-columns: 1fr; 
+  }
   .projects,
   .color-background {
     grid-column: auto; /* Reset columns */
   }
 
-  img {
-    display: none;
+  .grid-container-healsproduct {
+    grid-template-columns: 1fr; 
+  }
+
+  .color-background {
+    height: 400px;
   }
 
   h1.projects {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -194,5 +201,59 @@ a.images {
   }
   h3.challenge {
     font-size: 1.5rem;
+  }
+  p.heading {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 10px;
+    margin-left: 1%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  img.vegan {
+    max-width: 430px;
+    margin-left: 15%;
+  }
+
+}
+/*====================================== Mobile  view: ===================================*/
+@media only screen and (max-width: 568px) {
+
+  .grid-container-healsproduct {
+    grid-template-columns: 1fr; 
+  }
+
+ img.topofthepage {
+margin-top: 0;
+ }
+
+  h1.projects {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--fontcolor);
+    padding-top: 2rem;
+    padding-left: 0%;
+    margin-top: 0%;
+  }
+  p.heading {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 10px;
+    margin-left: 1%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  img.vegan {
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  h2.projects {
+    font-size: 2rem;
+  }
+  h3.challenge {
+    font-size: 1rem;
   }
 }
