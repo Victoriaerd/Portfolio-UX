@@ -150,6 +150,30 @@ a.images {
 }
 
 
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+.portfolio-nav i {
+  font-size: 18px;
+}
+
 /* script {
   padding-left: 10%;
 } */

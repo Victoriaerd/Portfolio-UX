@@ -222,7 +222,7 @@ button {
   );
   width:9rem;
   height:3rem;
-  border-radius: 24px;
+  border-radius: 4px;
   outline: 1px solid rgb(15, 15, 15); 
   
   /* box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.2888), */

@@ -27,9 +27,18 @@ section p {
 
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 1rem;
   }
-  
+
+  .grid-container-about {
+    display: block; /* Change to block layout */
+ }
+ .grid-item-1,
+ .grid-item-2 {
+   max-width: 100%; 
+   padding-bottom: 10%;
+ }
+}
   /*========================================== Mobile view: ======================================*/
 @media only screen and (max-width: 568px) {
   .grid-container-about {
@@ -40,7 +49,10 @@ section p {
    max-width: 100%; 
    padding-bottom: 10%;
  }
+ body {
+  font-size: 0.8rem;
+}
  .grid-item-1 {
-   margin-bottom: 20px; /* Add spacing between sections */
+   margin-bottom: 1px; /* Add spacing between sections */
  }
 }
