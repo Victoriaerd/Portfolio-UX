@@ -128,10 +128,29 @@ ol li.interview {
   list-style-type: circle; 
   margin-right: 30px;
 }
+
 blockquote {
   font-style: italic; 
 }
 
+.myrole {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1rem;
+  font-weight: 400;
+  list-style-type: disc;
+  white-space: nowrap; 
+  position: relative;
+  margin-right: 60%;
+  margin-left:5%;
+}
+
+h3.role{
+  margin-left:7%;
+}
 .grid-item {
   padding-right: 1.5rem;
 }
@@ -238,6 +257,20 @@ a.images {
   img.vegan {
     max-width: 430px;
     margin-left: 15%;
+  }
+  .myrole {
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1rem;
+    font-weight: 400;
+    list-style-type: disc;
+    white-space: nowrap; 
+    position: relative;
+    margin-right: 2%;
+    margin-left: 5%;
   }
 
 }
