@@ -158,8 +158,8 @@ a.images {
 .portfolio-nav a {
   display: inline-flex;
   align-items: center;
-  padding: 10px 15px;
-  border: 1px solid #ddd;
+  padding: 15px 25px;
+ 
 }
 
 .prev {
