@@ -440,7 +440,8 @@ a.logo {
   }
 
   header img {
-   width: 80px;
+   width: 100px;
+   padding-left: 10px;
   }
 
   a .top-navigation {
