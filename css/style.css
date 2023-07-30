@@ -536,7 +536,7 @@ a.logo {
    /* UPDATED NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   .dropdown-content {
-    position: absolute; /* Remove absolute positioning */
+    position: absolute; 
     display: none; /* Hide by default */
     width: 80%; /* Make full width of parent */
   }
