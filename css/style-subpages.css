@@ -324,7 +324,7 @@ margin-top: 0;
   p {
     padding: 10px;
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
   }
   p.heading {
     font-size: 1rem;
@@ -368,6 +368,7 @@ margin-top: 0;
       display: block;
       padding-top: 0;
       margin-left: 5%;
+      margin-right: 5%;
       padding-left: 0;
     }
     
@@ -376,5 +377,6 @@ margin-top: 0;
       display: block;
       padding-top: 0;
       margin-left: 5%;
+      margin-right: 5%;
     }
 }
