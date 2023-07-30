@@ -618,4 +618,7 @@ a.logo {
     line-height: 2rem;
   }
   
+  h2.portfolio-nav {
+    font-size:  1.2rem;
+  }
 }
