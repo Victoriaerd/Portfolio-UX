@@ -9,7 +9,7 @@
 }
 .grid-container-p5 {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr
 }
 body {
   line-height: calc(1rem + 1rem);
