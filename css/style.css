@@ -80,6 +80,7 @@ ul li {
   text-transform: uppercase;
   list-style-type: none;
   display: inline-block;
+  
   margin-right: 50px;
   position: relative;
 }
@@ -115,15 +116,18 @@ a:link {
 /* Links hover-over */
 a:hover:not(.active) {
   color: var(--fontcolor);
+  
 }
 
 /* visited link */
 a:visited {
   color: var(--fontcolor);
+  
 }
 
 a.top-navigation {
   position: relative;
+
 }
 /* I wanted the navigation to have the same underline animation as on my photography portfolio website to keep it consistent. 
 To achieve this effect, I used a pseudo class before added an underline that is initially hidden. I set it’s height 10 2px and 100% width to cover  the size of the link. 
@@ -567,12 +571,13 @@ a.logo {
 }
 
 .nav-menu-item:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 200px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -593,6 +598,7 @@ a.logo {
   h1 {
     text-align: center;
   }
+  
   .introduction {
     align-items: center;
   }
@@ -603,13 +609,15 @@ a.logo {
   }
 
   ul li {
-    display: inline;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10%;
+    margin-left: 2%;
+    padding-bottom: 0;
   }
+  
   .nav-menu-item:hover .dropdown-content {
-    min-width: 300px;
-    line-height: 5rem;
+    min-width: 240px;
+    line-height: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     opacity: 1;
   }

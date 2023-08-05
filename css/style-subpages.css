@@ -31,15 +31,28 @@ section {
   grid-template-columns: 1fr 1fr;
    grid-gap: 0;
   margin-top: 0%;
+  
 }
 
 .color-background {
   position: relative;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 520px;
   background: rgb(100,150,200);
   z-index: 1;
+}
+
+
+.heals1clmn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.heals1clmn img {
+  display: block;
+  margin: 0 auto;
 }
 
 .projects {
@@ -55,6 +68,7 @@ p.heading {
   line-height: 1.8rem;
   padding-left: 10%;
   margin-left: 10%;
+  margin-bottom: 3%;
 }
 
 h1.projects {
@@ -63,7 +77,6 @@ h1.projects {
   color: var(--fontcolor);
   padding-top: 10%;
   padding-left: 10%;
-  
   padding-bottom: 5%;
   margin-left: 10%;
   margin-top: 0%;
@@ -74,7 +87,7 @@ h2.projects {
   padding: 0;
   margin-right: 0;
   margin-left: 4%;
-  margin-top: 1%;
+  margin-top: 4%;
   margin-bottom: 1%;
 }
 
@@ -83,8 +96,8 @@ h3.projects {
   padding: 0;
   padding-bottom: 1%;
   margin: 0;
-  margin-left: 10%;
-  margin-top: 2%;
+  margin-left: 4%;
+  margin-top: 4%;
 }
 
 h3.challenge {
@@ -100,9 +113,31 @@ h3.challenge {
   z-index: 1;
 }
 
+h3.role{
+  margin: 3% 20%;
+}
+
+h3.call-out {
+  font-size: 1.2rem;
+  margin: 2% 15% 2% 4%;
+  padding: 4%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--fontcolor);
+  font-family: "oswald", sans-serif;
+  background-color:   rgb(146,209,153);
+  );
+  width:auto;
+  height:auto;
+  border-radius: 8px;
+}
+
 p.projects {
   margin-left: 10%;
 }
+
 
 section p,
 ol {
@@ -133,7 +168,7 @@ blockquote {
   font-style: italic; 
 }
 
-.myrole {
+ol.myrole {
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Segoe UI", sans-serif;
   display: flex;
   justify-content: space-between;
@@ -143,14 +178,12 @@ blockquote {
   font-weight: 400;
   list-style-type: disc;
   white-space: nowrap; 
-  position: relative;
-  margin-right: 60%;
-  margin-left:5%;
+  position: absolute;
+  margin-right: 40%;
+  margin-left: 12%;
 }
 
-h3.role{
-  margin-left:7%;
-}
+
 .grid-item {
   padding-right: 1.5rem;
 }
@@ -213,13 +246,20 @@ a.images {
   display: block;
   padding-top: 40px;
   padding-left: 10%;
+  border-radius: 44px;
+ 
 }
-
 .img-2column2 {
   display: block;
   padding-top: 15%;
   margin-left: 30%;
+  margin-bottom: 10%;
+  border-radius: 44px;
+  
 }
+
+
+
 /* script {
   padding-left: 10%;
 } */
@@ -284,6 +324,7 @@ a.images {
   img.vegan {
     max-width: 430px;
     margin-left: 15%;
+   
   }
   .myrole {
     font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Segoe UI", sans-serif;
@@ -328,7 +369,7 @@ margin-top: 0;
   }
   p.heading {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     padding: 20px;
     margin-left: 1%;
     margin-right: 1%;
@@ -339,6 +380,7 @@ margin-top: 0;
   img.vegan {
     max-width: 400px;
     margin-left: 0;
+
   }
 
   h2.projects {
@@ -348,6 +390,11 @@ margin-top: 0;
     font-size: rem;
   }
 
+  h3.call-out {
+    font-size: 1rem;
+    margin: 2% 4% 2% 4%;
+    padding: 4%;
+  }
   .grid2column {
     display: grid;
     grid-template-columns: 1fr;
