@@ -462,7 +462,7 @@ a.logo {
     margin: 0.5rem 0;
     line-height: calc(1em + 0.8rem);
     position: absolute;
-    top: 5%;
+    top: 2%;
   
   }
 
@@ -598,7 +598,7 @@ a.logo {
   h1 {
     text-align: center;
   }
-  
+
   .introduction {
     align-items: center;
   }
