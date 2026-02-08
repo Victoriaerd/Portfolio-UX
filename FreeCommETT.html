@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Victoria Erdelevskaya - UX &amp;Web Design Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style-subpages.css" />
+
+  <meta name="description" content="Portfolio" />
+  <meta name="keywords" content="UX, Design, Portfolio" />
+  <meta name="author" content="Victoria Erdelevskaya" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--  font familyies: Oswald for headings & Roboto for body -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- To create a link that goes to the top of the page from the bottom, to improve accessibility and usability -->
+  <a id="top"></a>
+
+  <header>
+    <!-- Top navigation -->
+    <a href="index.html">
+      <img src="./images/Victoria-Photography-logo.svg" alt="logo click to return to home page" width="130" />
+    </a>
+    <nav class="top-navigation" id="myTopnav">
+      <ul>
+        <li class="nav-menu-item">
+          <a href="#" class="top-navigation">Work</a>
+          <!-- Drop Down Menu in top nav with a class .dropdown-content-->
+          <div class="dropdown-content">
+            <ul>
+              <li>
+                <a href="FreeCommETT.html" class="top-navigation">Transcription Tool</a>
+              </li>
+              <li>
+                <a href="veganAI.html" class="top-navigation">Vegan AI app</a>
+              </li>
+              <li>
+                <a href="heals-redesign-project.html" class="top-navigation">Heal's Redesign Project</a>
+              </li>
+              <li>
+                <a href="photography-portfolio.html" class="top-navigation">Photography Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="top-navigation">Contact</a>
+        </li>
+        <li><a href="about.html" class="top-navigation">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="grid-container-healsproduct">
+        <div class="color-background" style="background: #00857E;">
+          <div class="text-col">
+
+            <h1 class="projects">UX design for an internal transcription tool</h1>
+            <p class="heading">Used by volunteers at FreeUKGenealogy with varying technical ability to digitise historical records.</p>
+            <p class="heading">
+              FreeComETT is an internal web application designed for FreeUKGenealogy. Volunteers use the tool to transcribe scanned historical documents
+        (marriages, baptisms, burials) into structured digital data.
+            </p>
+            <h3 class="role">Role </h3>
+            <p class="heading"> UX Designer working as part of a multidisciplinary team including
+        other UX designers, volunteer transcribers, and developers. </p>
+          </div>
+        </div>
+
+        <div class="color-background" style="background: #00857E;">
+          <img class='vegan' src="./images/FreeUKGenealogy/laptop.png" alt="FreeComETT transcription tool"
+            style="margin-top: 5%; margin-bottom: 5%; width: 100%; max-width: 900px;" />
+        </div>
+      </div>
+      <div class="grid-container-heals">
+        <div class="grid-item">
+          <h2 class="projects">Challenges</h2>
+           <h3 class="call-out" style="background-color: rgb(0,133,126);;">
+             <ul>
+        <li>Designing for accuracy-critical data entry</li>
+        <li>Supporting long, repetitive transcription sessions</li>
+        <li>Reducing cognitive load while viewing handwritten records</li>
+        <li>Providing clear validation and error feedback</li>
+        <li>Designing for accessibility and varied technical ability</li>
+      </ul>
+          </h3>
+    
+          <h3 class="projects">Design Goals </h3>
+          <p>
+            The primary design goal was to minimise cognitive load and keep the user’s core task - transcription - continuously in focus, while supporting a complex legacy-to-modern workflow transition.
+          </p>
+          <h3 class="projects">Tools </h3>
+          <p>
+            Figma, Photoshop, Miro, FigJam, Slack.
+          </p>
+        </div>
+        <br>
+      </div>
+      <div class="grid-container-heals">
+        <div class="grid-item">
+          <h2 class="projects">Design Principles & Rationale</h2>
+          <div class="grid-item">
+            <p>
+              To ground the design in technical and organisational realities, we interviewed the FreeComETT developers to understand the existing system architecture, data models, and constraints. 
+              This allowed to map the current and target information architecture, identify gaps in the existing interface, and align UX decisions with backend functionality.
+            </p>
+            <p>
+              The transcription tool already existed, but lacked a user-friendly front end. A key challenge was that many volunteers were long-term users of WinReg, a legacy desktop system that had reached end-of-support. Users were highly experienced, accustomed to established workflows, and initially resistant to moving to a browser-based tool.
+            </p>
+            <p>This meant the design needed to:</p>
+            <ul style="margin-left: 2rem; line-height: 1.8; list-style-type: disc;">
+              <li style="display: block; margin-bottom: 0.5rem;">Respect existing mental models from WinREG</li>
+              <li style="display: block; margin-bottom: 0.5rem;">Minimise disruption to expert workflows</li>
+              <li style="display: block; margin-bottom: 0.5rem;">Provide a familiar structure while introducing modern usability improvements</li>
+            </ul>
+            <p>
+              The initial post-login screen was intentionally simplified by deferring secondary information and actions to later stages of the workflow. The Transcribe action was made the dominant visual and interaction priority, while still preserving access to assignment creation for advanced users.
+            </p>
+            <p>
+              To improve discoverability and accessibility, key actions were moved from the footer into a persistent top navigation, with generous hit areas designed to support users with varying motor abilities and prolonged usage sessions.
+            </p>
+            <p>The transcription workspace was structured to maximise usable screen space:</p>
+            <ul style="margin-left: 2rem; line-height: 1.8;">
+              <li>A document viewer occupying the majority of the viewport</li>
+              <li>A structured data-entry area aligned with the source document</li>
+            </ul>
+            <h3 class="challenge">
+              Legacy System Transition Considerations
+            </h3>
+            <p>
+              Many volunteer users had relied on the legacy WinREG system for years, creating strong mental models and workflow expectations.
+              The design needed to minimise disruption by preserving familiar interaction patterns where possible, while still introducing a modern, scalable interface. 
+              This informed decisions around layout, terminology, and data entry structures to reduce the learning curve and resistance to change.
+            </p>
+            <p>The interface was designed to keep scanned records and data entry
+        fields visible simultaneously, reducing context switching.
+        A table-based layout supports keyboard-heavy workflows,
+        while inline validation helps prevent incorrect data formats.
+          </p>
+            <img src="./images/FreeUKGenealogy/Transcription page.jpg" width=900" alt="transcription workspace" />
+          </div>
+
+          <h3 class="challenge">
+            Design Principles
+          </h3>
+          <p>
+            <strong>1. Transcription first</strong><br>
+            The interface prioritises the primary task at every stage. Secondary information and actions are deferred until needed to reduce cognitive load and keep users focused during long transcription sessions.
+          </p>
+          <p>
+            <strong>2. Respect existing mental models</strong><br>
+            Many users had years of experience with a legacy desktop tool. 
+            Where possible, familiar interaction patterns and terminology were preserved to reduce friction and support adoption of the new system.
+          </p>
+          <p>
+            <strong>3. Design for sustained focus</strong><br>
+            The workspace supports extended, repetitive work by minimising visual noise, keeping the source document and data entry aligned, and avoiding unnecessary interruptions.
+          </p>
+          <p>
+            <strong>4. Prevent errors before they happen</strong><br>
+            Inline validation, structured inputs, and system feedback were prioritised to support accuracy in data entry and reduce downstream correction work.
+          </p>
+          <p>
+            <strong>5. Accessibility by default</strong><br>
+            Large clickable areas, clear hierarchy, and keyboard-friendly interactions were considered essential.
+          <p>
+            <strong>6. Align UX with system reality</strong><br>
+            Design decisions were informed by direct collaboration with developers and volunteers to ensure the interface reflected real system behaviour and could scale across different record types and workflows.
+          </p>
+          <h3 class="challenge">
+            Research & Insights
+          </h3>
+          <p>
+            Alongside developer interviews, I conducted interviews with volunteer transcribers to understand existing workflows, pain points, and expectations shaped by long-term use of the legacy WinReg system.
+          </p>
+          <p>
+            One consistent insight was that users were highly accustomed to tabular data entry. WinReg structured transcription as a table, allowing users to move quickly between fields using the keyboard. Early concepts explored alternative input structures, but user feedback clearly indicated that deviating from this pattern would slow users down and increase friction.
+          </p>
+          <p>
+            Based on this feedback, the transcription interface was designed around a table-based data entry model, preserving familiar interaction patterns while improving clarity, validation, and accessibility.
+          </p>
+          <p>
+            These interviews reinforced the importance of designing for continuity during the transition from a legacy system, particularly for users performing repetitive, accuracy-critical work.
+          </p>
+ <div class="grid-item">
+            <h3 class="challenge">
+              User Journey Overview
+            </h3>
+            <p>
+              The transcription experience spans multiple roles and system states. Mapping the end-to-end flow helped ensure the interface supported both individual transcription tasks and broader coordination workflows.
+            </p>
+            <p><strong>Primary Flow</strong></p>
+            <p>
+              <strong>1. Sign in</strong><br>
+              Users authenticate and land on a simplified entry point designed to orient them quickly around the primary action: transcription.
+            </p>
+            <p>
+              <strong>2. Assignment creation (Coordinator)</strong><br>
+              A coordinator creates an assignment and uploads source material (images, microfilm scans, or other media). Assignments may contain small batches or large volumes (up to hundreds of files).
+            </p>
+            <p>
+              <strong>3. Media upload & organisation</strong><br>
+              Uploaded files are organised into assignments and user-specific folders. Design considerations included:
+            </p>
+            <ul style="margin-left: 2rem; line-height: 1.8;">
+              <li>Handling large batch uploads (up to 500 files)</li><br>
+              <li>Visibility and ownership of folders</li><br>
+              <li>Coordinator oversight versus individual user autonomy</li>
+            </ul>
+            <p>
+              <strong>4. Transcription task selection</strong><br>
+              Transcribers select an assignment or, in cases where they work from physical media, create their own task. 
+              This flexibility supports different volunteer workflows without forcing a single rigid model.
+            </p>
+            <p>
+              <strong>5. Transcription work</strong><br>
+              Users transcribe records (e.g. marriage, burial, death details) using a structured interface aligned with the source document. 
+              
+            </p>
+            <p>
+              <strong>6. Validation & error checking</strong><br>
+              Before submission, the system checks for formatting and data errors, surfacing issues early to reduce downstream correction.
+            </p>
+            <p>
+              <strong>7. Output & confirmation</strong><br>
+              Completed work is exported as a CSV file. 
+              Users receive confirmation via email once the upload is successful, reinforcing closure of the task.
+            </p>
+          </div>
+          <br>
+        </div>
+          <h3 class="challenge">
+            Workspace & Interaction Design
+          </h3>
+          <p><strong>Document Viewing & Image Controls</strong></p>
+          <p>
+            Historical source documents varied significantly in quality and legibility. To support accurate transcription, the document viewer includes image adjustment controls such as:
+          </p>
+          <ul style="margin-left: 2rem; line-height: 1.8;">
+            <li>Zoom</li> <br>
+            <li>Brightness and contrast</li><br>
+            <li>Sharpness</li><br>
+            <li>The ability to expand and collapse the image control panel as needed</li><br>
+          </ul>
+          <p>
+            These controls allow users to tailor the viewing experience to different document conditions without leaving the transcription context. 
+            Keeping adjustments lightweight and easily accessibleto help maintaining focus during long sessions.
+          </p>
+        
+          </div>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="color-background" style="background: #00857E; height: auto;">
+
+        <div class="grid2column">
+
+          <div class="text2column">
+            <h2 class="projects" style="margin-top: 5%; ">
+              Prototype
+            </h2>
+            <h3 class="challenge">
+              Edit transcription file
+            </h3>
+            <br>
+            <p>
+              The transcription editor designed as a modal pop up allowing users to make changes to their file directly without leavign transcription page.
+  
+          </div>
+
+          <div class="img-2column">
+            <img src="./images/FreeUKGenealogy/Edit CSV file_Updated_Modal.jpg" width="600px"
+              alt="transcription editor" />
+          </div>
+        </div>
+      </div>
+
+      <div class="color-background" style="background: #00857E; height: auto; margin-top: -1px;">
+
+        <div class="grid2column">
+          <div class="img-2column2">
+            <img src="./images/FreeUKGenealogy/Load CSV page.jpg" width="600px" alt="Load CSV page" /> <br>
+            <img src="./images/FreeUKGenealogy/Load CSV page - on click.jpg" width="600px" alt="Load CSV page - on click" />
+          </div>
+          <div class="text2column2">
+            <br>
+            <h3 class="challenge">
+              Load CSV files
+            </h3>
+            <br>
+            <p>
+            In Load CSV files we groupped separately the CSV files on the FreeREG server and the CSV files in the FreeComETT account.  
+            The former may be very many, while the latter will always be few, 
+          so mixing them together and having to scroll to find the one from FreeComETT would have been cumbersome.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-background" style="background: #00857E; height: auto; margin-top: -1px;">
+        <div class="grid2column">
+          <div class="text2column">
+            <h3 class="challenge">
+              Customisable Data Entry
+            </h3>
+            <br>
+            <p>
+              Transcription requirements vary significantly across record types. Some records contain a small number of fields, while others can require up to 67 individual fields, making a static data-entry layout impractical.
+            </p>
+            <p>
+              To address this, the transcription tool supports customisable column layouts, allowing users to tailor the data-entry table to their current task.
+            </p>
+            <p>Users can:</p>
+            <ul style="line-height: 1.8; text-align: left;">
+              <li style="text-align: left;">Select which fields are visible in the table</li>
+              <li style="text-align: left;">Hide rarely used fields to reduce visual clutter</li>
+              <li style="text-align: left;">Reorder fields to match the structure of the source document</li>
+              <li style="text-align: left;">Save and reuse preferred layouts</li>
+            </ul>
+            <p>
+              This flexibility allows users to work efficiently without being overwhelmed by unnecessary inputs.
+            </p>
+            <br>
+          </div>
+          <div class="img-2column">
+            <img src="./images/FreeUKGenealogy/Data  Entry Manage Fields.jpg" width="600px"  alt="data entry fiels customisation table" />
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="grid-container-heals">
+        <div class="grid-item">
+          <h3 class="challenge">
+            Accessibility
+          </h3>
+          <p>
+            To support prolonged transcription sessions and diverse accessibility needs, users can further customise individual fields by:
+          </p>
+          <ul style="line-height: 1.8; text-align: left;">
+            <li style="text-align: left;">Adjusting font size for readability</li>
+            <li style="text-align: left;">Applying colour cues to visually group or highlight fields</li>
+            <li style="text-align: left;">Expanding or collapsing configuration panels to maximise workspace</li>
+          </ul>
+          <p>
+            These controls allow users to adapt the interface to different document qualities, screen sizes, and personal preferences without disrupting the core workflow.
+          </p>
+          <br>
+          <p><strong>Auto-Copy & Efficiency Features</strong></p>
+          <p>
+            For records with repeated or shared values, an auto-copy option allows users to propagate data across fields automatically. This feature can be enabled or disabled per field, giving users control over when automation supports accuracy versus when manual entry is required.
+          </p>
+          <p>
+            This balance ensures efficiency gains without introducing unintended errors.
+          </p>
+
+          <h2 class="projects" style="margin-bottom: 5%; margin-top: 5%;"> Summary and what's next</h2>
+
+            <p> This work resulted in a production-ready UX now in active development, 
+              shaped by close collaboration with engineers and grounded in real transcription workflows. 
+              The design balances legacy familiarity with modern browser-based interaction, 
+              enabling long-tenured users to transition confidently while supporting scalability, accessibility, and power-user efficiency.
+            </p> <br>
+              <p><strong>What's next</strong></p>
+              <p>Run task-based usability testing with both experienced WinREG users and new transcribers to validate learnability, 
+                error rates, and time-to-completion across high-field-count records.
+Test alternative data-entry patterns (e.g. field grouping, or inline field entry).</p>
+          </div>
+          <br>
+
+        </div>
+    </section>
+
+    <section>
+      <!-- Portfolio projects -->
+
+      <div class="portfolio-nav">
+
+        <a href="photography-portfolio.html" class="prev">
+          <img src="./images/carbon_arrow-left.svg" width="41" height="41" alt="previous project" /></a>
+        </a>
+
+
+        <a href="index.html" class="prev">
+          <h2 class="portfolio-nav" style="text-decoration: underline;"> View all projects </h2>
+        </a>
+
+        <a href="veganAI.html" class="next">
+          <img src="./images/carbon_arrow-right.svg" width="41" height="41" alt="next project" /></a>
+
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <div class="social-icons">
+        <a href="mailto:victoria.erd@gmail.com" target="_blank" aria-label="send email">
+          <img src="./images/email_icon.svg" width="41" height="41" alt="Email me" /></a>
+        <a href="https://www.linkedin.com/in/victoriaerdelevskaya/">
+          <img src="./images/linkedin_icon.svg" width="41" height="41" alt="LinkedIn" /></a>
+        <a href="#top" target="_self" class="scroll-up">
+          <img src="./images/scrollup_120421.svg" width="41" height="41" alt="Scroll Up" /></a>
+      </div>
+    </nav>
+
+    <!-- The <small> tag defines smaller text (like copyright and other side-comments). -->
+    <small class="copyright">
+      Handcoded © Victoria Erdelevskaya, 2021-2026. Logo Design:
+      <a class="logo" href="https://sarahboris.com/"> Sarah Boris. </a>
+      <p>Your data isn't collected when using this site.</p>
+    </small>
+  </footer>
+</body>
+
+</html>
