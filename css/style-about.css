@@ -7,19 +7,21 @@
   grid-template-columns: 30% 70%;
 }
 .grid-item-2 {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 body {
   line-height: calc(1em + 0.5rem);
 }
 h2.about-me {
-  padding: 4%;
+  padding-top: 1%;
+  padding-left: 4%;
   padding-bottom: 0;
 
 }
 section p {
-  margin: 5%;
+  margin-top: 1%;
+  padding-left: 4%;
   text-align: justify;
   font-size: 1.1rem;
 }
@@ -36,7 +38,11 @@ section p {
  .grid-item-1,
  .grid-item-2 {
    max-width: 100%; 
-   padding-bottom: 5%;
+   padding-bottom: 1%;
+ }
+ .grid-item-1 {
+   margin-bottom: 1px; /* Add spacing between sections */
+   display: none; /* Hide the image on tablet*/
  }
 }
   /*========================================== Mobile view: ======================================*/
@@ -56,5 +62,6 @@ section p {
 }
  .grid-item-1 {
    margin-bottom: 1px; /* Add spacing between sections */
+   display: none; /* Hide the image on mobile */
  }
 }
