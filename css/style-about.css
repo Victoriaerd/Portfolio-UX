@@ -64,4 +64,7 @@ section p {
    margin-bottom: 1px; /* Add spacing between sections */
    display: none; /* Hide the image on mobile */
  }
+ .grid-item-2 {
+   padding-right: 20px;
+ }
 }
